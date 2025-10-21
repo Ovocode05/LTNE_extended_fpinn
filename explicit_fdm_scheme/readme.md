@@ -92,9 +92,7 @@ Violation of these conditions leads to numerical instability (manifested as `NaN
 
 ## Planned Improvements
 
-1. **Fast L1 (SOE):**s 
-   Replace the direct history sum with a *Sum-of-Exponentials* (SOE) approximation for $t^{-\alpha}$, reducing the per-step cost from $O(N_t)$ to $O(\log N_t)$ or $O(1)$.
+1. **Fast L1 (SOE) :** Replace the direct history sum with a *Sum-of-Exponentials* (SOE) approximation for $t^{-\alpha}$, reducing the per-step cost from $O(N_t)$ to $O(\log N_t)$ or $O(1)$.
 
-3. **Implicit Scheme:**  
-   Develop an implicit variant (planned under `fdm_solver/`) that is **unconditionally stable**, allowing larger time steps without violating stability constraints.
+3. **Implicit Scheme :** Develop an implicit variant (planned under `fdm_solver/`) that is **unconditionally stable**, allowing larger time steps without violating stability constraints.
 ---
