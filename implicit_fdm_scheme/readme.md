@@ -122,3 +122,7 @@ The solver's output is validated by generating plots that can be compared to ana
 * A time-evolution plot of the temperature at the domain's center.
 * A 1D spatial slice of the final temperature.
 * A validation plot that replicates Figure 2a from the reference paper, showing $\theta_s$ and $\theta_f$ at specific x-locations over time.
+  
+<img width="1000" height="700" alt="image" src="https://github.com/user-attachments/assets/97fa76b0-001f-43c3-a6d0-91c92e57fc12" />
+
+
