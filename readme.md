@@ -74,32 +74,20 @@ An **implicit** time-stepping scheme is used. At each time step $t_{k+1}$, we so
 The code is organized as a Python package for clarity and maintainability.
 
 ```
-Project root (LTNE_extended_fpinn)
-├── README.md
+LTNE_extended_fpinn/
+├── readme.md
 ├── requirements.txt
-├── run_fdm.py
-├── results/
-├── data/
-│   └── (input / reference data)
-├── notebooks/
-│   └── exploratory.ipynb
-├── docs/
-│   └── design.md
-├── examples/
-│   └── example_run.py
-├── scripts/
-│   └── postprocess.sh
-├── tests/
-│   └── test_core.py
-└── fdm_solver/
-    ├── __init__.py
-    ├── core.py           # Solver class, time loop
-    ├── utils.py          # L1 weights, Laplacian assembly, BC helpers
-    ├── config.py         # default parameters (Nx, Ny, α, dt, etc.)
-    ├── plots.py          # visualization helpers
-    ├── io.py             # save/load results
-    └── examples/
-        └── demo_config.py
+├── .gitignore                
+├── explicit_fdm_scheme/
+│   ├── explicit.py
+│   └── readme.md
+└── implicit_fdm_scheme/
+    ├── implicit.py
+    ├── alpha_eql_0.4
+    ├── alpha_eql_0.8
+    └── alpha_eql_1
+    |__ readme.md
+
 ```
 
 ## 5. How to Run
